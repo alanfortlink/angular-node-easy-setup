@@ -4,6 +4,7 @@ import os
 import sys
 
 scopeServices, scopeControllers, scopeStates = "<!-- END SERVICES -->", "<!-- END CONTROLLERS -->", "//END SCOPES"
+rootDirectory = '.rd_easy_setup'
 
 def makedirs(name):
 	try:
@@ -114,6 +115,9 @@ app.config(function($stateProvider, $urlRouterProvider){
 
 
 def generate_view():
+	if os.path.exists(rootDirectory):
+		os.chdir('app')
+
 	view_name = raw_input("View Name: ")
 	controller_name = raw_input("Controller Name: ")
 	state_name = raw_input("State Name: ")
@@ -141,6 +145,9 @@ def generate_view():
 	updateFile('app.js', contentState, scopeStates)
 
 def generate_service():
+	if os.path.exists(rootDirectory):
+		os.chdir('app')
+		
 	package_name = raw_input("Package Name: ")
 	service_name = raw_input("Service Name: ")
 
@@ -171,6 +178,8 @@ def generate_angular():
 
 	makedirs(name)
 	makedirs('%s/app' % name)
+
+	saveFile('%s/%s' % (name, rootDirectory), '.')
 
 	# ---------------------- Generate packages.json file ----------------------------
 
