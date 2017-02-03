@@ -13,7 +13,7 @@ $ ./install.sh
 To start a new app, run: 
 
 ```bash
-$ easy-setup gen app
+$ an-easy-setup gen app
 ```
 
 and provide the needed information we ask.
@@ -24,11 +24,11 @@ Make sure that every command below will be executed from inside `your_app_folder
 To add a new view with its controller and a state, run:
 
 ```bash
-$ easy-setup gen view
+$ an-easy-setup gen view
 ```
 
 To add a new service, run:
 
 ```bash
-$ easy-setup gen service
+$ an-easy-setup gen service
 ```

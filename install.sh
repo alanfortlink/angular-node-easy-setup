@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo ln easy-setup.py /usr/bin/easy-setup
+sudo ln angular-node-easy-setup.py /usr/bin/an-easy-setup
 echo ""
-echo "EasySetup successfully installed!"
+echo "AngularNode EasySetup successfully installed!"
 echo ""
