@@ -204,8 +204,12 @@ def generate_angular():
 
 	os.system("npm install")
 
+	print("")
+	print("---------------------------------------------------------------------------------------------")
 	print("Your angular project named %s was created in %s/%s" % (name, os.getcwd(), name))
 	print("Go to the folder and run npm install to install the dependencies and then npm start to run")
+	print("---------------------------------------------------------------------------------------------")
+	print("")
 
 
 if 'gen' in sys.argv and 'app' in sys.argv:
