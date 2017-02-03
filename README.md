@@ -5,7 +5,7 @@ An effective tool to create and increment angular projects running on a node.js 
 ## Installation
 
 ```bash
-# ./install.sh
+$ ./install.sh
 ```
 
 ## API Reference
