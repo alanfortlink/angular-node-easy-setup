@@ -4,7 +4,7 @@ This tool allows you to create angular projects running over a node.js server.
 All the pages created with `angular-node-easy-setup` are mapped in a route's configuration file.
 
 In this tool, a view is a set with a `.html` and a `.controller.js` files.
-All views, controllers and services are automatically mapped to the `index.html` and a new route is created for it.
+All views, controllers and services are automatically mapped in the `index.html` and a new route is created for it.
 
 Services can also be created and they are also automatically mapped to the `index.html`.
 
