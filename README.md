@@ -15,6 +15,8 @@ Services can also be created and they are also automatically mapped to the `inde
 $ ./install.sh
 ```
 
+Just to remind you, this tool creates a npm-based project, so, to be able to install the packages and run the project you need to have npm installed in your machine.
+
 ## API Reference
 
 To start a new app, run: 
